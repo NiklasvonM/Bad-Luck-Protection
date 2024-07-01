@@ -6,7 +6,7 @@ from blp.negative_binomial_cdf import negative_binomial_cdf
 
 def main() -> None:
     expected_value: float = 100.0
-    x = range(0, round(3 * expected_value) + 1)  # Range of trial values
+    x = range(0, round(3 * expected_value) + 1)
     alphas: list[float] = [1.0, 0.5, 0.2]
     plt.figure(figsize=(10, 6))
     for alpha in alphas:
